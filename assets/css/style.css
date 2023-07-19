@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@400;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.bar{
+    height: 22px;
+    width: 168px;
+    background-color: #117050;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 100px;
+    margin: 0;
+    margin-bottom: 40px;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    margin: 0;
+    margin: 18px 0;
+}
+.button{
+    display: inline-block;
+    border: 2px solid #454545;
+    border-radius: 3px;
+    color: #454545;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 10px 30px;
+}
+.button:hover{
+    color: #FFF;
+    background-color: #454545;
+}
+
+
+header .line{
+    background-color: #117050;
+    height: 9px;
+}
+.header-area{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+.header--left img{
+    width: 64px;
+    height: 64px;
+}
+.header--right{
+    display: flex;
+    align-items: center;
+}
+.header--search form{
+    display: flex;
+    align-items: center;
+}
+.header--search input{
+    outline: 0;
+    padding: 8px 14px;
+    width: 100%;
+    max-width: 250px;
+    font-size: 16px;
+    border: 1px solid #999;
+}
+.header--search input::placeholder{
+    color: #999;
+}
+.header--search button{
+    border: 0;
+    background-color: transparent;
+    margin-left: -35px;
+    cursor: pointer;
+    height: 17px;
+}
+.header--search button img{
+    width: 16px;
+    height: 16px;
+}
+.header--menu{
+    margin-left: 60px;
+    cursor: pointer;
+}
+.header--menu img{
+    height: 24px;
+    width: 24px;
+}
+
+
+.banner{
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.banner .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.banner .banner-images{
+    margin-top: 60px;
+}
+.banner .banner-images img{
+    width: 148px;
+    height: 148px;
+    border: 6px solid #117050;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+
+.area1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area1-content{
+    padding: 70px 150px;
+}
+.area1-quote{
+    margin-bottom: 30px;
+}
+.area1-text{
+    margin-bottom: 56px;
+    line-height: 25px;
+    text-justify: auto;
+}
+.area1-img1{
+    background-image: url("../images/f2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+}
+.area1-img2{
+    background-image: url("../images/f1.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+
+.area2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area2-content{
+    padding: 70px 150px;
+}
+.area2-text{
+    margin-bottom: 56px;
+    line-height: 25px;
+    text-justify: auto;
+}
+.area2-img1{
+    background-image: url("../images/f4.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+}
+.area2-img2{
+    background-image: url("../images/f3.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+
+.area3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.area3-content{
+    padding: 220px 150px;
+    padding-left: 220px;
+    background-image: url("../images/bg2.jpg");
+    background-size: cover;
+    background-position: left;
+}
+.area3-text{
+    margin-bottom: 56px;
+    line-height: 25px;
+    text-justify: auto;
+}
+.area3-img1{
+    background-image: url("../images/f5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.area4{
+    display: grid;
+    grid-template-columns: 500px 1fr;
+}
+.area4-content{
+    background-color: #e8e9ee;
+    padding: 170px 20px 170px 170px;
+}
+.area4-text{
+    margin-bottom: 56px;
+    line-height: 25px;
+    text-justify: auto;
+}
+.area4-img1{
+    background-image: url("../images/bg3.jpg");
+    background-size: cover;
+    background-position: left;
+}
+
+
+.area5{
+    background-image: url("../images/bg4.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+
+footer{
+    background-color: #333;
+    color: #FFF;
+    padding: 80px;
+    text-align:center;
+}
+
+
+@media (min-width:769px) and (max-width:1140px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .area1-content,
+    .area2-content {
+        padding: 70px;
+    }
+
+    .area3-content {
+        padding: 220px 70px;
+    }
+
+    .area4 {
+        grid-template-columns: 2fr 3fr;
+    }
+    .area4-content {
+        padding: 160px 70px;
+    }
+
+    .area5{
+        background-position: right;
+        height: 500px;
+    }
+}
+
+@media (min-width:427px) and (max-width:768px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .area1{
+        grid-template-columns: 3fr 2fr;
+    }
+    .area1-content{
+        padding: 70px 80px;
+    }
+
+    .area2{
+        grid-template-columns: 2fr 3fr;
+    }
+    .area2-content{
+        padding: 70px 80px;
+    }
+
+    .area3{
+        grid-template-columns: 3fr 2fr;
+    }
+    .area3-content{
+        padding: 70px 80px;
+    }
+
+    .area4{
+        grid-template-columns: 2fr 3fr;
+    }
+    .area4-content{
+        padding: 70px 40px;
+    }
+}
+
+@media (max-width:426px){
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h1{
+        font-size: 56px;
+        line-height: 56px;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .header--menu {
+        margin-left: 20px;
+    }
+
+    .banner .banner-images img {
+        width: 74px;
+        height: 74px;
+        border: 3px solid #117050;
+        margin-right: 10px;
+    }
+
+    .area1,
+    .area2,
+    .area3,
+    .area4 {
+        grid-template-columns: 1fr;
+    }
+    .area1-content,
+    .area2-content,
+    .area3-content,
+    .area4-content {
+        padding: 30px;
+    }
+
+    .area1-img1,
+    .area2-img1{
+        height: 200px;
+    }
+
+    .area5{
+        background-position: right;
+        height: 200px;
+    }
+
+    footer{
+        padding: 50px 30px;
+    }
+}
+
+@media (max-width:320px){
+    .header--search input{
+        max-width: 140px;
+    }
+}
